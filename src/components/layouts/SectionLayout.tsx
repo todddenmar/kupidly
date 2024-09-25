@@ -40,7 +40,7 @@ function SectionLayout({
         )}
       </div>
       {contentFooter && (
-        <div className="hidden md:block pb-4">{contentFooter}</div>
+        <div className="hidden md:block pb-[32px]">{contentFooter}</div>
       )}
     </div>
   );
