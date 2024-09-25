@@ -14,8 +14,8 @@ export default function Home() {
         content={
           <>
             Upload a few images of yourself and adjust your AI's configurations
-            to create your <span className="text-red-700">AI clone</span> in{' '}
-            <span className="text-red-700">less than 5 minutes!</span>
+            to create your <span className="text-highlight_text">AI clone</span>{' '}
+            in <span className="text-highlight_text">less than 5 minutes!</span>
           </>
         }
         contentImage={
@@ -54,8 +54,8 @@ export default function Home() {
           <>
             Your AI will engage in personalized conversation with those who
             visit your Kupidly profile. Monetize your audience 24/7 by accepting
-            <span className="text-red-700"> gifts</span> and offering{' '}
-            <span className="text-red-700">unlockable media</span>
+            <span className="text-highlight_text"> gifts</span> and offering{' '}
+            <span className="text-highlight_text">unlockable media</span>
           </>
         }
         contentImage={
@@ -75,8 +75,8 @@ export default function Home() {
             <div>
               Monitor your AI's actions at all times with the ability to turn
               your
-              <span className="text-red-700"> AI on/off</span> and manually take
-              over conversations if you choose!
+              <span className="text-highlight_text"> AI on/off</span> and
+              manually take over conversations if you choose!
             </div>
           </div>
         }

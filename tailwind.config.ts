@@ -13,11 +13,7 @@ const config: Config = {
         foreground: 'var(--foreground)',
         primary_text: '#FFFFFF',
         secondary_text: '#FFFFFF80',
-        heading_gradient: `background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.7) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;`,
+        highlight_text: '#e0204f',
       },
     },
     fontFamily: {
