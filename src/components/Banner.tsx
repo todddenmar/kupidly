@@ -16,6 +16,7 @@ function Banner() {
           src={StarsImage}
           alt="star-bg"
           className="object-cover  object-center h-full w-full z-0"
+          quality={100}
         />
       </div>
       <div className="flex flex-col w-full max-w-[1200px] mx-auto">
@@ -24,11 +25,13 @@ function Banner() {
             className="block sm:hidden object-cover h-full w-full"
             src={MobileHeroTopImage}
             alt="hero-background-top"
+            quality={100}
           />
           <Image
             className="hidden sm:block object-cover h-full w-full"
             src={DesktopHeroTopImage}
             alt="hero-background-top"
+            quality={100}
           />
         </div>
         {/* Heading */}
@@ -46,11 +49,13 @@ function Banner() {
             className="block sm:hidden object-cover h-full w-full relative z-0"
             src={MobileHeroBottomImage}
             alt="hero-background-bottom"
+            quality={100}
           />
           <Image
             className="hidden sm:block object-cover h-full w-full relative z-0"
             src={DesktopHeroBottomImage}
             alt="hero-background-bottom"
+            quality={100}
           />
         </div>
       </div>
