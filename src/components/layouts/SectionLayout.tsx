@@ -27,7 +27,7 @@ function SectionLayout({
       )}
       <div
         className={cn(
-          'p-6 flex flex-col md:grid md:grid-cols-2 md:justify-between md:items-center gap-[32px]',
+          'p-6 flex flex-col md:grid md:grid-cols-2 md:justify-between md:items-center gap-[32px] lg:gap-[98px]',
           className
         )}
       >
