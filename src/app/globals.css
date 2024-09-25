@@ -71,3 +71,11 @@ body {
   background: var(--Color-Rose-DIsabled, #F43F5E80);
   backdrop-filter: blur(100px)
 }
+
+.heading_gradient{
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.7) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

@@ -49,12 +49,12 @@ export default function Home() {
       />
       <SectionDivider />
       <SectionLayout
-        contentTitle="Engae and Earn with AI"
+        contentTitle="Engage and Earn with AI"
         content={
           <>
             Your AI will engage in personalized conversation with those who
             visit your Kupidly profile. Monetize your audience 24/7 by accepting
-            <span className="text-red-700">gifts</span> and offering{' '}
+            <span className="text-red-700"> gifts</span> and offering{' '}
             <span className="text-red-700">unlockable media</span>
           </>
         }
@@ -75,7 +75,7 @@ export default function Home() {
             <div>
               Monitor your AI's actions at all times with the ability to turn
               your
-              <span className="text-red-700">AI on/off</span> and manually take
+              <span className="text-red-700"> AI on/off</span> and manually take
               over conversations if you choose!
             </div>
           </div>

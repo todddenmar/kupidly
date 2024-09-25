@@ -11,7 +11,7 @@ function Heading1({
   return (
     <h1
       className={cn(
-        'font-bold text-[30px] leading-[36px] md:text-[60px] md:leading-[60px] text-center font-spacegrotesk',
+        'font-bold text-[30px] leading-[36px] md:text-[60px] md:leading-[60px] text-center font-spacegrotesk heading_gradient',
         className
       )}
     >
