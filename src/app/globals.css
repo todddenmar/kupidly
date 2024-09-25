@@ -25,3 +25,49 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: 'spacegrotesk';
+  font-weight: 'normal';
+  src: url('./fonts/SpaceGrotesk-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'spacegrotesk';
+  font-weight: 700;
+  src: url('./fonts/SpaceGrotesk-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'dmsans';
+  font-weight: 300;
+  src: url('./fonts/DMSans-Light.ttf');
+}
+@font-face {
+  font-family: 'dmsans';
+  font-weight: 'normal';
+  src: url('./fonts/DMSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'dmsans';
+  font-weight: 700;
+  src: url('./fonts/DMSans-Bold.ttf');
+}
+
+.primary-button-bg{
+  background: linear-gradient(323.19deg, #BE123C -2.73%, #E11D48 59.14%, #BF56F0 121.01%, #DC2626 182.87%, #E11D48 244.74%, #F72F8F 306.61%, #E11D48 368.48%);
+
+}
+
+.light-blur{
+  background: var(--Color-Rose-DIsabled, #F43F5E80);
+
+}
+.light-blur2{
+  background: var(--Color-Violet-Disabled, #8B5CF680);
+}
+
+.section-divider{
+  background: var(--Color-Rose-DIsabled, #F43F5E80);
+  backdrop-filter: blur(100px)
+}

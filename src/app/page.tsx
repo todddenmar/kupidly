@@ -1,101 +1,99 @@
-import Image from "next/image";
+import Banner from '@/components/Banner';
+import BeginButton from '@/components/buttons/BeginButton';
+import SectionDivider from '@/components/dividers/SectionDivider';
+import SectionLayout from '@/components/layouts/SectionLayout';
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+    <div>
+      <Banner />
+      <SectionLayout
+        sectionTitle="How It Works"
+        contentTitle="Clone Yourself In Minutes"
+        content={
+          <>
+            Upload a few images of yourself and adjust your AI's configurations
+            to create your <span className="text-red-700">AI clone</span> in{' '}
+            <span className="text-red-700">less than 5 minutes!</span>
+          </>
+        }
+        contentImage={
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src={'/images/images.png'}
+            alt="how-it-works"
+            width={1288}
+            height={738}
+            className="object-contain h-full w-full"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        }
+      />
+      <SectionDivider />
+      <SectionLayout
+        contentTitle="Connect and Promote"
+        content={
+          <>
+            Link to your Kupidly profile on your various socials. We've found
+            great results with impactful call-to-actions such as “I answer DMs
+            on Kupidly” or “Send me your best pickup line on Kupidly”
+          </>
+        }
+        contentImage={
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+            src={'/images/social.png'}
+            alt="social"
+            width={1382}
+            height={782}
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        }
+      />
+      <SectionDivider />
+      <SectionLayout
+        contentTitle="Engae and Earn with AI"
+        content={
+          <>
+            Your AI will engage in personalized conversation with those who
+            visit your Kupidly profile. Monetize your audience 24/7 by accepting
+            <span className="text-red-700">gifts</span> and offering{' '}
+            <span className="text-red-700">unlockable media</span>
+          </>
+        }
+        contentImage={
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+            src={'/images/gift.png'}
+            alt="gift"
+            width={1289}
+            height={1056}
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        }
+      />
+      <SectionDivider />
+      <SectionLayout
+        contentTitle="Seamless AI Control"
+        content={
+          <div className="flex flex-col gap-[32px]">
+            <div>
+              Monitor your AI's actions at all times with the ability to turn
+              your
+              <span className="text-red-700">AI on/off</span> and manually take
+              over conversations if you choose!
+            </div>
+          </div>
+        }
+        contentFooter={
+          <div className="flex justify-center">
+            <BeginButton />
+          </div>
+        }
+        contentImage={
+          <Image
+            src={'/images/AIonoff.png'}
+            alt="AIonoff"
+            width={1289}
+            height={1066}
+          />
+        }
+      />
     </div>
   );
 }
