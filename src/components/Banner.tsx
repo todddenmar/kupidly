@@ -1,17 +1,20 @@
 import Image from 'next/image';
 import React from 'react';
 import BeginButton from './buttons/BeginButton';
-import Heading1 from './headings/Heading1';
+import HeroHeading from './headings/HeroHeading';
+import DesktopHeroTopImage from '/public/images/desktop/hero-background-top@2x.png';
+import DesktopHeroBottomImage from '/public/images/desktop/hero-background-bottom@2x.png';
+import MobileHeroTopImage from '/public/images/mobile/hero-background-top@2x.png';
+import MobileHeroBottomImage from '/public/images/mobile/hero-background-bottom@2x.png';
+import StarsImage from '/public/images/star@2x.png';
 
 function Banner() {
   return (
     <div className="h-[557px] md:h-auto w-full relative">
       <div className="absolute max-w-[1440px] mx-auto inset-0 flex flex-col items-center justify-center">
         <Image
-          src={'/images/Star.png'}
+          src={StarsImage}
           alt="star-bg"
-          width={1440}
-          height={831}
           className="object-cover  object-center h-full w-full z-0"
         />
       </div>
@@ -19,22 +22,18 @@ function Banner() {
         <div className="h-[72px] md:h-[241px] w-full">
           <Image
             className="block sm:hidden object-cover h-full w-full"
-            src={'/images/mobile/hero-background-top.png'}
-            alt="star-bg"
-            width={430}
-            height={142}
+            src={MobileHeroTopImage}
+            alt="hero-background-top"
           />
           <Image
             className="hidden sm:block object-cover h-full w-full"
-            src={'/images/desktop/hero-background-top.png'}
-            alt="star-bg"
-            width={1441}
-            height={241}
+            src={DesktopHeroTopImage}
+            alt="hero-background-top"
           />
         </div>
         {/* Heading */}
         <div className="py-[24px] px-[40px] flex flex-col gap-6 items-center relative">
-          <Heading1>Create your AI clone in 5 minutes </Heading1>
+          <HeroHeading>Create your AI clone in 5 minutes </HeroHeading>
           <p className="text-[16px] font-light leading-6 md:text-2xl text-center text-white opacity-50">
             Monetize your online audience 24/7
           </p>
@@ -45,17 +44,13 @@ function Banner() {
         <div>
           <Image
             className="block sm:hidden object-cover h-full w-full relative z-0"
-            src={'/images/mobile/hero-background-bottom.png'}
-            alt="star-bg"
-            width={390}
-            height={260}
+            src={MobileHeroBottomImage}
+            alt="hero-background-bottom"
           />
           <Image
             className="hidden sm:block object-cover h-full w-full relative z-0"
-            src={'/images/desktop/hero-background-bottom.png'}
-            alt="star-bg"
-            width={1441}
-            height={555}
+            src={DesktopHeroBottomImage}
+            alt="hero-background-bottom"
           />
         </div>
       </div>

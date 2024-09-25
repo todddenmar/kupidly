@@ -1,7 +1,7 @@
 import { cn } from '@/app/lib/utils';
 import React from 'react';
 
-function Heading1({
+function SectionHeading({
   children,
   className,
 }: {
@@ -9,15 +9,15 @@ function Heading1({
   className?: string;
 }) {
   return (
-    <h1
+    <h2
       className={cn(
-        'font-bold text-[30px] leading-[36px] md:text-[60px] md:leading-[60px] text-center font-spacegrotesk heading_gradient',
+        'font-bold text-[30px] leading-[36px] md:text-[48px] text-center font-spacegrotesk heading_gradient ',
         className
       )}
     >
       {children}
-    </h1>
+    </h2>
   );
 }
 
-export default Heading1;
+export default SectionHeading;

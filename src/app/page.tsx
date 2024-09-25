@@ -3,14 +3,23 @@ import BeginButton from '@/components/buttons/BeginButton';
 import SectionDivider from '@/components/dividers/SectionDivider';
 import SectionLayout from '@/components/layouts/SectionLayout';
 import Image from 'next/image';
-
+import generateImage from '/public/images/images@2x.png';
+import socialImage from '/public/images/social@2x.png';
+import giftImage from '/public/images/gift@2x.png';
+import AIonoffImage from '/public/images/AIonoff@2x.png';
 export default function Home() {
   return (
     <div>
       <Banner />
       <SectionLayout
         sectionTitle="How It Works"
-        contentTitle="Clone Yourself In Minutes"
+        maxWidth={454}
+        contentTitle={
+          <>
+            Clone Yourself <br className="hidden md:block" />
+            In Minutes
+          </>
+        }
         content={
           <>
             Upload a few images of yourself and adjust your AI's configurations
@@ -20,16 +29,16 @@ export default function Home() {
         }
         contentImage={
           <Image
-            src={'/images/images.png'}
+            src={generateImage}
             alt="how-it-works"
-            width={1288}
-            height={738}
             className="object-contain h-full w-full"
+            quality={100}
           />
         }
       />
       <SectionDivider />
       <SectionLayout
+        maxWidth={514}
         contentTitle="Connect and Promote"
         content={
           <>
@@ -40,17 +49,23 @@ export default function Home() {
         }
         contentImage={
           <Image
-            src={'/images/social.png'}
+            src={socialImage}
             alt="social"
-            width={1382}
-            height={782}
             className="object-contain h-full w-full"
+            quality={100}
           />
         }
       />
       <SectionDivider />
       <SectionLayout
-        contentTitle="Engage and Earn with AI"
+        className="xl:pt-0 xl:-mt-[40px]"
+        maxWidth={516}
+        contentTitle={
+          <>
+            Engage and Earn <br className="hidden md:block" />
+            with AI
+          </>
+        }
         content={
           <>
             Your AI will engage in personalized conversation with those who
@@ -61,17 +76,18 @@ export default function Home() {
         }
         contentImage={
           <Image
-            src={'/images/gift.png'}
+            src={giftImage}
             alt="gift"
-            width={1289}
-            height={1056}
             className="object-contain h-full w-full"
+            quality={100}
           />
         }
       />
-      <SectionDivider />
+      <SectionDivider className="xl:-mt-[40px]" />
       <SectionLayout
+        maxWidth={501}
         contentTitle="Seamless AI Control"
+        className="xl:pt-0 xl:-mt-[40px]"
         content={
           <div className="flex flex-col gap-[32px]">
             <div>
@@ -89,11 +105,10 @@ export default function Home() {
         }
         contentImage={
           <Image
-            src={'/images/AIonoff.png'}
+            src={AIonoffImage}
             alt="AIonoff"
-            width={1289}
-            height={1066}
             className="object-contain h-full w-full"
+            quality={100}
           />
         }
       />

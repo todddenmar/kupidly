@@ -1,7 +1,7 @@
 import { cn } from '@/app/lib/utils';
 import React from 'react';
 
-function Heading2({
+function HeroHeading({
   children,
   className,
 }: {
@@ -9,15 +9,15 @@ function Heading2({
   className?: string;
 }) {
   return (
-    <h2
+    <h1
       className={cn(
-        'font-bold text-[30px] leading-[36px] md:text-[48px] text-center font-spacegrotesk heading_gradient ',
+        'font-bold text-[30px] leading-[36px] md:text-[60px] md:leading-[60px] text-center font-spacegrotesk heading_gradient',
         className
       )}
     >
       {children}
-    </h2>
+    </h1>
   );
 }
 
-export default Heading2;
+export default HeroHeading;
