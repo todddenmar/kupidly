@@ -6,7 +6,7 @@ import DesktopHeroTopImage from '/public/images/desktop/hero-background-top@2x.p
 import DesktopHeroBottomImage from '/public/images/desktop/hero-background-bottom@2x.png';
 import MobileHeroTopImage from '/public/images/mobile/hero-background-top@2x.png';
 import MobileHeroBottomImage from '/public/images/mobile/hero-background-bottom@2x.png';
-import StarsImage from '/public/images/star@2x.png';
+import StarsImage from '/public/images/Star@2x.png';
 
 function Banner() {
   return (
