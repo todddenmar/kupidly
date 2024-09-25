@@ -44,6 +44,7 @@ export default function Home() {
             alt="social"
             width={1382}
             height={782}
+            className="object-contain h-full w-full"
           />
         }
       />
@@ -64,6 +65,7 @@ export default function Home() {
             alt="gift"
             width={1289}
             height={1056}
+            className="object-contain h-full w-full"
           />
         }
       />
@@ -91,6 +93,7 @@ export default function Home() {
             alt="AIonoff"
             width={1289}
             height={1066}
+            className="object-contain h-full w-full"
           />
         }
       />
