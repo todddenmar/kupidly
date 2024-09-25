@@ -55,8 +55,10 @@ body {
 }
 
 .primary-button-bg{
-  background: linear-gradient(323.19deg, #BE123C -2.73%, #E11D48 59.14%, #BF56F0 121.01%, #DC2626 182.87%, #E11D48 244.74%, #F72F8F 306.61%, #E11D48 368.48%);
+  background: linear-gradient(323.19deg, #BE123C -2.73%, #E11D48 59.14%, #BF56F0 121.01%, #DC2626 182.87%, #E11D48 244.74%, #F72F8F 306.61%, #E11D48 368.48%); box-shadow: 0px 20px 40px -12px #E11D4859;
 
+  box-shadow: 0px 20px 40px -12px #E11D4859;
+   
 }
 
 .light-blur{
