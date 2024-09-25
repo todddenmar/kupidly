@@ -29,7 +29,7 @@ function SectionLayout({
       )}
       <div
         className={cn(
-          'p-6 flex flex-col md:flex-row  md:items-center gap-[32px] lg:gap-0 ',
+          'px-6 py-2 flex flex-col md:flex-row  md:items-center gap-[32px] lg:gap-0 ',
           className
         )}
       >
