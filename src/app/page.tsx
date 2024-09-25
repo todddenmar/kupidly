@@ -14,6 +14,7 @@ export default function Home() {
       <SectionLayout
         sectionTitle="How It Works"
         maxWidth={454}
+        className="md:h-[544px]"
         contentTitle={
           <>
             Clone Yourself <br className="hidden md:block" />
@@ -38,6 +39,7 @@ export default function Home() {
       />
       <SectionDivider />
       <SectionLayout
+        className="md:h-[500px]"
         maxWidth={514}
         contentTitle="Connect and Promote"
         content={
@@ -58,7 +60,7 @@ export default function Home() {
       />
       <SectionDivider />
       <SectionLayout
-        className="xl:pt-0 xl:-mt-[40px]"
+        className="md:h-[500px]"
         maxWidth={516}
         contentTitle={
           <>
@@ -83,11 +85,10 @@ export default function Home() {
           />
         }
       />
-      <SectionDivider className="xl:-mt-[40px]" />
+      <SectionDivider />
       <SectionLayout
         maxWidth={501}
         contentTitle="Seamless AI Control"
-        className="xl:pt-0 xl:-mt-[40px]"
         content={
           <div className="flex flex-col gap-[32px]">
             <div>

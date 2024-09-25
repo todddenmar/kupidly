@@ -5,7 +5,7 @@ function SectionDivider({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        'w-full max-w-[1200px] mx-auto md:blur-[150px] h-[40px] opacity-50 blur-[50px] section-divider',
+        'w-full max-w-[1200px] mx-auto md:blur-[150px] h-[40px] opacity-50 blur-[50px] section-divider xl:-mt-[40px]',
         className
       )}
     ></div>

@@ -23,7 +23,7 @@ function SectionLayout({
   return (
     <div className="max-w-[1200px] mx-auto">
       {sectionTitle && (
-        <div className="px-[24px] py-4 md:pb-[50px]">
+        <div className="px-[24px] py-4 md:py-0">
           <SectionHeading>{sectionTitle}</SectionHeading>
         </div>
       )}
